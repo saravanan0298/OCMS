@@ -1,0 +1,114 @@
+#header
+{
+background-color:#900C3F;
+color:white;
+text-align:center;
+padding:6px;
+}
+#foot
+{
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#002475;
+   color: white;
+   text-align: center;
+}
+.split {
+  height: 70%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 23px;
+}
+.left {
+  left: 5;
+  width:15%;
+  background-color:lightgrey;
+}
+.right {
+  right: 0;
+  width:85%;
+  background-color:white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height:auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+div.split right
+{
+	height:auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  color: white;
+  background-color:#117A65;
+}  
+.split 
+{
+  height: 70%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 23px;
+}
+.left {
+  left: 5;
+  width:15%;
+  background-color:lightgrey;
+}
+.right {
+  right: 0;
+  width:85%;
+  background-color:white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height:auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  float:right;
+}
+   .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

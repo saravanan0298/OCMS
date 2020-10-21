@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#header
+{
+background-color:#900C3F;
+color:white;
+text-align:center;
+padding:6px;
+}
+#foot
+{
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#002475;
+   color: white;
+   text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  color: white;
+  background-color:#117A65;
+}     
+.split {
+  height: 70%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 23px;
+}
+.left {
+  left: 5;
+  width:15%;
+  background-color:lightseagreen;
+}
+.right {
+  right: 0;
+  width:85%;
+  background-color:white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+   .button {
+  background-color: #900C3F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nn
+{
+float: right;    
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button0").click(function(){
+   $('#content').load("videoone.html");
+
+});
+$("#button1").click(function(){
+   $('#content').load("videotwo.html");
+
+});
+$("#button2").click(function(){
+   $('#content').load("videothree.html");
+
+});
+$("#button3").click(function(){
+   $('#content').load("videofour.html");
+
+});
+$("#button4").click(function(){
+   $('#content').load("videofive.html");
+
+});
+});
+</script>
+</head>
+<body>
+<div id="header">
+<h1>V_LEARN</h1>
+</div>
+
+<div>
+<ul>
+<li><a href="cindex.html">C</a></li>
+<li><a href="quiz.jsp">Quiz</a></li>
+<li>  <a href="ccourseMaterial.jsp">Course Material</a><li>
+<li> <a href="cv.html" class="active">Course Videos</a></li>
+<li>  <a href="cp.html">Complier</a></li>
+<li class="nn">  <a href="index.html"><b>Logout</b></a></li></ul>
+</div>
+
+<div class="split left">
+  <div class="centered">
+<button name="q1" class="button" id="button0" type="submit" >BASIC C</button><br><br>
+<button name="q2" class="button" id="button1" type="submit" >CONDITION STATEMENT</button><br><br>
+<button name="q3" class="button" id="button2"  type="submit" >LOOPING</button><br><br>
+<button name="q4" class="button" id="button3"  type="submit" >ARRAY</button><br><br>
+<button name="q5" class="button" id="button4"  type="submit" >STRUCTURE</button>
+  </div>
+</div>
+
+
+<div class="split right">
+  <div class="centered" id="content">
+    <h2>CLICK BUTTON TO LEARN </h2>
+  </div>
+</div>
+
+
+
+<div id="foot">copyright saravanan0298@gmail.com</div>
+</body>
+</html>

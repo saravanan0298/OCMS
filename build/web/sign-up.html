@@ -1,0 +1,85 @@
+<html>
+<head>
+
+    <script> 
+    // Change the type of input to password or text 
+        function myFunction() { 
+            var temp = document.getElementById("psw"); 
+            if (temp.type === "password") { 
+                temp.type = "text"; 
+            } 
+            else { 
+                temp.type = "password"; 
+            }
+			}
+function toggle(){			
+			var password = document.getElementById("psw").value;
+        var confirmPassword = document.getElementById("repassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords does not match.");
+            return false;
+        }
+        return true;
+        }
+</script>
+<title>V_LEARN</title>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body>
+<div class="logo">
+<img src="logo.jpg">
+</div>
+<ul>
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact</a></li>
+</ul></br></br></br></br>
+<pre>                             <h1>SIGN-IN </h1></pre>
+<header>
+<div class="register">
+<form action ="sign-up.jsp" method="post" id="register">
+<h2>Register form</h2>
+<label>First Name :</label></br>
+<input type="Text" size="25" placeholder="Name" name="Fname" id="Name" required></br></br>
+<label>Last Name :</label></br>
+<input type="Text" size="25" placeholder="LName" name="Lname" id="LName" required></br></br>
+<label>DOB :</label></br>
+<input type="date" placeholder="DOB" name="DOB" id="DOB" required></br></br>
+<label>AGE :</label></br>
+<input type="number" placeholder="age" name="Age" id="age" required></br></br>
+<label>SEX :</label></br>
+<input type="radio" placeholder="sex" name="Gender" id="male" value="Male" required>
+<span id="male">&nbsp;Male</span>&nbsp;&nbsp;</br></br>
+<input type="radio" placeholder="sex" name="Gender" id="female" value="Female" required>
+<span id="male">&nbsp;Female</span>&nbsp;&nbsp;</br></br>
+<label>Phone no :</label></br>
+<select id="ph">
+<option>+91</option>
+<input type="Text" placeholder="mobile no" name="PhoneNo" id="mobile" required></br></br>
+<label>Qualification :</label></br>
+	<Select name="degree" id="degree">
+          <option value="Below+2">Below+2</option>
+          <option value="+2Passed">+2Passed</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Postgraduate">Postgraduate</option>
+          <option value="others">Others</option>
+         </select></br></br>
+<label>Email :</label></br>
+<input type="email" placeholder="eg:saravanan@gmail.com" name="email" id="email" required></br></br>
+<label>Select Course :</label></br>
+	<Select name="course" id="course">
+	          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option></select></br></br>
+		  <label>Create Password :</label></br>
+<input type="password" placeholder="password" id="psw" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></br>
+<input type="checkbox" onclick="myFunction()">Show Password</br></br>
+<label>Confirm Password :</label></br>
+<input type="password" placeholder="Re-password" name="Repassword" id="repassword" required></br></br>
+<input type="submit" onclick="return toggle()" value="Submit" id="submit">
+<input  type="reset" value="Clear" id="clear">
+</form>
+</div>
+</body>
+</html>
